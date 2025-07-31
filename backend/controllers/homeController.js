@@ -11,3 +11,17 @@ export const getHomePage = (req, res) => {
     res.status(500).send('Error loading the page.');
   }
 };
+
+export const getAboutPage = (req, res) => {
+  try {
+    console.log('About page route accessed');
+    const data = {
+      title: 'About Us - CodeNinjas Training'
+    };
+    // The 'about' string refers to 'about.ejs' in the views folder
+    res.render('about', data);
+  } catch (error) {
+    console.error('Error rendering about page:', error);
+    res.status(500).send('Error loading the page.');
+  }
+};
