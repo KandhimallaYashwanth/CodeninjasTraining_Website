@@ -45,13 +45,13 @@ main {
 
 @media (max-width: 480px) {
     .container {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1.25rem;
     }
 }
 
 @media (max-width: 360px) {
     .container {
-        padding: 1rem 0.75rem;
+        padding: 1.25rem 1rem;
     }
 }
 
@@ -62,7 +62,12 @@ main {
     padding: 8rem 0 6rem 0; 
     background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-main) 100%);
 }
-.hero-content { max-width: 800px; margin: 0 auto; }
+.hero-content { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 .hero-title { 
     font-size: 3.5rem; 
     margin-bottom: 2rem; 
@@ -168,12 +173,14 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .feature-item {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
     background: var(--bg-card);
     border-radius: 16px;
     border: 1px solid var(--border-color);
@@ -293,7 +300,11 @@ main {
     .journey-visual { order: 1; margin-bottom: 3rem; }
     .hero-title { font-size: 2.8rem; }
     .stats-grid { grid-template-columns: repeat(4, 1fr); }
-    .features-grid { grid-template-columns: 1fr; }
+    .features-grid { 
+        grid-template-columns: 1fr; 
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
     .values-grid { grid-template-columns: 1fr; }
 }
 
@@ -301,16 +312,24 @@ main {
     #hero { padding: 6rem 0 4rem 0; }
     .hero-title { font-size: 2.2rem; }
     .hero-subtitle { font-size: 1.1rem; }
+    .hero-content { 
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     .section-title { font-size: 2.2rem; }
     .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
     .feature-item { flex-direction: column; text-align: center; }
     .feature-icon { margin: 0 auto 1rem; }
+    .features-grid { 
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
     .value-card { padding: 2rem 1.5rem; }
     
     /* Fix journey section mobile spacing */
     #journey { padding: 4rem 0; }
-    .journey-content { padding: 0 0.5rem; }
-    .journey-visual { padding: 0 0.5rem; }
+    .journey-content { padding: 0 0.75rem; }
+    .journey-visual { padding: 0 0.75rem; }
     .journey-text { font-size: 1rem; line-height: 1.6; }
     
     /* Ensure all sections have proper spacing */
@@ -322,17 +341,25 @@ main {
 @media (max-width: 480px) {
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .stat-card { padding: 1rem 0.5rem; }
-    .feature-item { padding: 1.5rem; }
+    .feature-item { padding: 1.5rem 1rem; }
+    .features-grid { 
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
     .value-card { padding: 1.5rem 1rem; }
     
     /* Additional mobile fixes */
-    .container { padding: 2rem 1rem; }
+    .container { padding: 2rem 1.25rem; }
     #journey { padding: 3rem 0; }
-    .journey-content { padding: 0 0.25rem; }
-    .journey-visual { padding: 0 0.25rem; }
+    .journey-content { padding: 0 0.5rem; }
+    .journey-visual { padding: 0 0.5rem; }
     .journey-text { font-size: 0.95rem; line-height: 1.5; }
     .hero-title { font-size: 1.8rem; }
     .hero-subtitle { font-size: 1rem; }
+    .hero-content { 
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
     .section-title { font-size: 1.8rem; }
     
     /* Ensure all sections have proper spacing */
@@ -342,17 +369,25 @@ main {
 }
 
 @media (max-width: 360px) {
-    .container { padding: 1.5rem 0.5rem; }
+    .container { padding: 1.25rem 1rem; }
     #hero { padding: 4rem 0 3rem 0; }
     #journey { padding: 2rem 0; }
-    .journey-content { padding: 0 0.25rem; }
-    .journey-visual { padding: 0 0.25rem; }
+    .journey-content { padding: 0 0.5rem; }
+    .journey-visual { padding: 0 0.5rem; }
     .journey-text { font-size: 0.9rem; line-height: 1.4; }
     .hero-title { font-size: 1.6rem; }
     .hero-subtitle { font-size: 0.9rem; }
+    .hero-content { 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .section-title { font-size: 1.6rem; }
     .stat-card { padding: 0.75rem 0.25rem; }
-    .feature-item { padding: 1rem; }
+    .feature-item { padding: 1rem 0.5rem; }
+    .features-grid { 
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
     .value-card { padding: 1rem 0.5rem; }
     
     /* Ensure all sections have proper spacing */
