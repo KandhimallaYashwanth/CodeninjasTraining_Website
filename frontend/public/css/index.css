@@ -36,7 +36,7 @@ section { padding: 4rem 0; }
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    text-emphasis-color: transparent;
 }
 .section-header { margin-bottom: 4rem; }
 .section-title {
