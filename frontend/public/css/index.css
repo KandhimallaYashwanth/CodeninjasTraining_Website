@@ -163,7 +163,7 @@ section { padding: 4rem 0; }
     flex: 1 1 70%; /* More space for the list */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Evenly spaces the items */
+    gap: 1.5rem; /* CORRECTED: Use gap for consistent spacing */
 }
 .services-visual-panel {
     flex: 1 1 35%; /* Less space for the image */
@@ -219,7 +219,8 @@ section { padding: 4rem 0; }
 .service-text h4 { color: var(--text-dark); font-size: 1.1rem; margin-bottom: 0.2rem; transition: color 0.3s ease; }
 .service-text p { margin: 0; line-height: 1.5; font-size: 0.9rem; transition: color 0.3s ease; }
 .explore-services-link {
-    margin-top: 1rem; /* Added margin for spacing */
+    margin-top: auto; /* Pushes the button to the bottom */
+    padding-top: 1rem; /* Adds space above the button */
 }
 
 /* ============================================ */

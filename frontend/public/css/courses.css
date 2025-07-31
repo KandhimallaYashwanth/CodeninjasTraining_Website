@@ -1,0 +1,198 @@
+/* ============================================ */
+/* COURSES PAGE STYLES (BLUE & GREEN THEME) */
+/* ============================================ */
+
+/* Hero Section for Courses Page */
+#courses-hero {
+    background-color: var(--bg-accent);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3.8rem; /* Increased font size */
+    margin-bottom: 1.5rem; /* Increased margin */
+    font-weight: 800; /* Bolder font */
+    letter-spacing: -1px; /* Tighter letter spacing for professional look */
+    color: var(--text-dark); /* Sets color for non-gradient part */
+}
+
+/* This ensures the gradient is applied correctly to the span */
+.page-title .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 650px; /* Slightly wider for better flow */
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Course Section General Styling */
+.course-section {
+    padding: 6rem 0;
+}
+
+#management-courses {
+    background-color: var(--bg-card);
+}
+
+/* REDESIGNED & AESTHETIC SECTION HEADER */
+.course-section .section-header {
+    text-align: left;
+    margin-bottom: 4rem; /* Increased margin */
+    padding-left: 1.5rem;
+    border-left: 4px solid; /* Accent border on the left */
+    border-image: var(--gradient-primary) 1;
+}
+
+.course-section .section-header .section-title {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.course-section .section-header .section-subtitle {
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Course Cards Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2.5rem;
+}
+
+/* RICHER CARD DESIGN */
+.course-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-soft);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+}
+
+.card-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 1.2rem; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.9rem;
+}
+
+.course-level {
+    background-color: rgba(0, 109, 119, 0.1);
+    color: var(--accent-primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.course-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #f59e0b; /* Gold for stars */
+    font-weight: 600;
+}
+
+.course-rating i {
+    width: 16px;
+    height: 16px;
+    fill: #f59e0b;
+}
+
+.course-title {
+    color: var(--text-dark);
+    font-size: 1.3rem; /* Slightly smaller title */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card-description {
+    margin-bottom: 0.9rem; /* Reduced margin */
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    padding-top: 1.3rem; /* Reduced padding */
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.card-footer span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-footer i {
+    width: 16px;
+    height: 16px;
+    color: var(--accent-primary);
+}
+
+.card-cta-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-cta, .card-cta-secondary {
+    padding: 0.8rem; /* Reduced padding */
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-cta {
+    background: var(--accent-primary);
+    color: white;
+}
+
+.card-cta:hover {
+    background-color: #004A50;
+}
+
+.card-cta-secondary {
+    background: var(--bg-card);
+    color: var(--accent-primary);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.card-cta-secondary:hover {
+    background-color: var(--bg-accent);
+}
