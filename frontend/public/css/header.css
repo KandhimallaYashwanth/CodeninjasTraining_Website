@@ -80,7 +80,14 @@ body {
 .nav-links a:hover { color: var(--text-dark); }
 .nav-links a:hover::after { width: 100%; }
 
-#mobile-menu-toggle { display: none; background: none; border: none; color: var(--text-dark); cursor: pointer; }
+#mobile-menu-toggle {   
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other elements */
+ }
 .cta-button{
     display: inline-flex;
     align-items: center;
@@ -95,6 +102,33 @@ body {
 .cta-button { background: var(--accent-primary); color: white; }
 .cta-button:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0, 109, 119, 0.3); }
 @media (max-width: 768px) {
-    .nav-links, #main-header .cta-button { display: none; }
-    #mobile-menu-toggle { display: block; }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        padding: 6rem 0 2rem 0;
+        transform: translateY(-100%); /* Hides the menu off-screen */
+        transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 999;
+    }
+    .nav-links.nav-active {
+        transform: translateY(0); /* Slides the menu into view */
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+    #main-header .cta-button {
+        display: none;
+    }
+    #mobile-menu-toggle {
+        display: block;
+    }
 }
