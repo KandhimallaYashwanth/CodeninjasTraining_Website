@@ -80,13 +80,6 @@ main {
     background-clip: text;
     text-emphasis-color: transparent;
 }
-.-title .gradient-text {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-emphasis-color: transparent;
-}
 
 .hero-subtitle { 
     font-size: 1.2rem; 
@@ -94,6 +87,11 @@ main {
     color: var(--text-muted);
 }
 
+.split-section {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
 /* ============================================ */
 /* JOURNEY SECTION */
 /* ============================================ */
