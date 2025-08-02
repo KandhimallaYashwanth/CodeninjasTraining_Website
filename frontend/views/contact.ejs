@@ -1,0 +1,151 @@
+<%- include('partials/header') %>
+
+<!-- Link to the specific CSS for this page -->
+<link rel="stylesheet" href="/css/contact.css">
+
+<main>
+    <!-- ============================================ -->
+    <!-- CONTACT HERO SECTION - Simple & Impactful -->
+    <!-- ============================================ -->
+    <section id="contact-hero-unique" class="container">
+        <div class="contact-hero-content animate-on-scroll text-center">
+            <h1 class="section-title">
+                Let's Build Your <span class="gradient-text">Future Together.</span>
+            </h1>
+            <p class="section-subtitle">
+                Reach out to us for inquiries, course details, or any questions you may have.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- MAIN CONTACT CONTENT - Info Card & Form -->
+    <!-- ============================================ -->
+    <section id="contact-main-content" class="container">
+        <div class="contact-grid">
+            <!-- Left Column: Contact Information Card -->
+            <div class="contact-info-card animate-on-scroll">
+                <h3 class="contact-card-title">Get in Touch with CodeNinjas</h3>
+                <p class="contact-card-subtitle">We're here to help you every step of the way.</p>
+
+                <ul class="info-list-unique">
+                    <li>
+                        <div class="info-icon-wrapper"><i data-feather="map-pin"></i></div>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>17, 2ND FLOOR, 7TH MAIN ROAD,<br>II STAGE, INDIRANAGAR,<br>BANGALORE - 560038</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-icon-wrapper"><i data-feather="phone"></i></div>
+                        <div>
+                            <h4>Call Us Anytime</h4>
+                            <p><a href="tel:+918019626242">+91 80196 26242</a></p>
+                        <p class="small-text">(Mon-Fri, 9 AM - 6 PM IST)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-icon-wrapper"><i data-feather="mail"></i></div>
+                        <div>
+                            <h4>Email Support</h4>
+                            <p><a href="mailto:info@codeninjas-training.in">info@codeninjas-training.in</a></p>
+                            <p class="small-text">We aim to respond within 24 hours.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="social-connect-unique">
+                    <h4>Follow Us</h4>
+                    <div class="social-links-unique">
+                        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                        <a href="https://wa.me/918019626242" target="_blank" aria-label="WhatsApp"><i data-feather="message-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form-unique-block animate-on-scroll">
+                <h3 class="contact-form-title">Send Us a Quick Message</h3>
+                <p class="contact-form-subtitle">Fill out the form below and we'll get back to you shortly.</p>
+                <form class="contact-form-unique">
+                    <div class="form-group-unique">
+                        <label for="name-unique">Your Name</label>
+                        <input type="text" id="name-unique" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group-unique">
+                        <label for="email-unique">Your Email</label>
+                        <input type="email" id="email-unique" name="email" placeholder="abc@example.com" required>
+                    </div>
+                    <div class="form-group-unique">
+                        <label for="phone-unique">Phone Number (Optional)</label>
+                        <input type="tel" id="phone-unique" name="phone" placeholder="+91 XXXXXXXXXX">
+                    </div>
+                    <div class="form-group-unique">
+                        <label for="subject-unique">Subject</label>
+                        <input type="text" id="subject-unique" name="subject" placeholder="Course Inquiry, Partnership, etc." required>
+                    </div>
+                    <div class="form-group-unique">
+                        <label for="message-unique">Your Message</label>
+                        <textarea id="message-unique" name="message" rows="7" placeholder="Tell us how we can help you..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button-unique">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- MAP INTEGRATION SECTION - Full Width -->
+    <!-- ============================================ -->
+    <section id="map-section-unique">
+        <div class="container map-container-unique animate-on-scroll">
+            <h2 class="section-title text-center mb-8">Locate Our <span class="gradient-text">Campus</span></h2>
+            <div class="map-embed-wrapper-unique">
+                <!-- Replace 'YOUR_GOOGLE_MAPS_EMBED_URL' with your actual Google Maps embed code -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8967924376517!2d77.6323631750892!3d12.978586387349905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13d2f2b7a9f9%3A0xc3f12b6e1b6f0e21!2s17%2C%202nd%20Floor%2C%207th%20Main%20Rd%2C%20Indiranagar%20I%20Stage%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin"
+                    width="100%"
+                    height="500"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="CodeNinjas Training Location"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
+
+<!-- Feather Icons and Animate-on-Scroll script (ensure these are included once per page, typically at the end of body) -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace(); // This initializes Feather Icons
+
+    // Simple JavaScript for "animate-on-scroll" (ensure this doesn't conflict with existing scripts)
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
