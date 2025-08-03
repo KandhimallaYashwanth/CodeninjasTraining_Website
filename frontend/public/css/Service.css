@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #c9e2c6;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff8f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  position : fixed;
+  width : 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: #9cb7ae;
+}
+
+.logo .green {
+  color: #036a3e;
+  font-size: 0.8rem;
+  margin-left: 2px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn {
+  background:#036a3e;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #024e2d;
+}
+a:hover{
+    color : #024e2d;
+}
+
+.services-header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-header span {
+  color:#036a3e;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 cards per row */
+  gap: 30px;
+  padding: 40px 60px;
+  margin : 100px;
+}
+
+.card {
+  background: #ffffffb5;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  background: linear-gradient(135deg, #036a3e,#9cb7ae);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.learn-btn {
+  background:  #036a3e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.learn-btn:hover {
+  background:  #024e2d;
+}
+
+/* CTA Section */
+.cta-section {
+  background:  #036a3e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.cta-btn {
+  background: white;
+  color:  #036a3e;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #f0f0f0;
+}
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+ footer {
+      background-color: #0c0f1cfb;
+      color: #fff;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-top: 1px solid #222;
+    }
+
+    footer div {
+      flex: 1 1 200px;
+      margin-bottom: 1.5rem;
+    }
+
+    footer h4 {
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      display: block;
+      margin: 0.2rem 0;
+    }
+
+    footer .logo {
+      font-size: 1.2rem;
+    }
+
+    footer .green {
+      color: #9cb7ae;
+    }
+
+    footer p {
+      color: #ccc;
+      font-size: 0.9rem;
+    }

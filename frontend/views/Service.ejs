@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeNinjas Training - Services</title>
+  <link rel="stylesheet" href="/css/Service.css">
+</head>
+<body>
+<header>
+    <div class="logo">Code<span>ninjas</span> <span class="green" style = "font-size: large;"><sup>Training</sup></span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Courses</a>
+      <a href="#">Contact Us</a>
+      <a href="#" class="btn">Explore Courses</a>
+    </nav>
+</header>
+
+  <section class="services-header">
+    <h2>Our <span>Services</span></h2>
+    <p>At CodeNinjas Training, we offer a comprehensive suite of IT services designed to empower your business, from custom software solutions to strategic IT consulting.</p>
+  </section>
+
+  <section class="cards-container">
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Custom Software Development</h3>
+      <p>Tailored software solutions to meet your unique business needs.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">💻</div>
+      <h3>Web and App Development</h3>
+      <p>Modern web and mobile applications to engage your audience.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">🔧</div>
+      <h3>Software Support and Maintenance</h3>
+      <p>Reliable support to ensure your software runs smoothly.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h3>IT Consulting & System Integration</h3>
+      <p>Strategic IT advice and integration services to boost efficiency.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Application Monitoring & Optimization</h3>
+      <p>Performance monitoring and fine-tuning for better results.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">♻️</div>
+      <h3>Legacy Software Modernization</h3>
+      <p>Revamp old systems to meet modern tech standards.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">🔗</div>
+      <h3>API Development and Integration</h3>
+      <p>Custom APIs and seamless third-party integrations.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+    <div class="card">
+      <div class="icon">🗄️</div>
+      <h3>Data Migration & Backup Services</h3>
+      <p>Secure data migration and reliable backup solutions.</p>
+      <button class="learn-btn">Learn More →</button>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <div class="logo">Code<span>ninjas</span> <span class="green" style = "font-size: large;"><sup>Training</sup></span></div>
+      <p>Empowering careers through comprehensive IT training and skill development. Join thousands of successful graduates.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Courses</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div>
+      <h4>Popular Courses</h4>
+      <a href="#">Data Science Using Python</a>
+      <a href="#">Web Development</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Stock Market</a>
+    </div>
+    <div>
+      <h4>Contact Info</h4>
+      <p>📍 17, 2nd Floor, 7th Main Road, II Stage, Indiranagar, Bangalore-560038, Karnataka, India</p>
+      <p>📞 +91 8019626242</p>
+      <p>✉️ info@codeninjastraining.in</p><br>
+      <button class="cta-btn">Contact Us</button>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => observer.observe(card));
+  });
+</script>
+
+
+</body>
+</html>

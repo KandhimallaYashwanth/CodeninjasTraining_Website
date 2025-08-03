@@ -39,3 +39,17 @@ export const getContactPage = (req, res) => {
     res.status(500).send('Error loading the page.');
   }
 };
+
+export const getServicePage = (req, res) => {
+  try {
+    console.log('Service page route accessed');
+    const data = {
+      title: 'Service - CodeNinjas Training'
+    };
+    // The 'about' string refers to 'about.ejs' in the views folder
+    res.render('Service', data);
+  } catch (error) {
+    console.error('Error rendering Service page:', error);
+    res.status(500).send('Error loading the page.');
+  }
+};
