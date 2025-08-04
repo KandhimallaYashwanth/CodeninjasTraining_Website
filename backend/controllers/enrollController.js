@@ -19,8 +19,10 @@ export const getEnrollmentPage = (req, res) => {
       title: `Enroll in ${courseName} - CodeNinjas`,
       description: `Enroll in our ${courseName} course today and take the next step in your career journey.`,
       courseName: courseName,
-      course: course, // Pass the slug for the back link
-      category: category // Pass the category for the back link
+      course: course,
+      category: category,
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_ANON_KEY
     };
     
     res.render('enroll', data);

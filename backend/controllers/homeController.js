@@ -30,7 +30,9 @@ export const getContactPage = (req, res) => {
   try {
     const data = {
       title: 'Contact Us - CodeNinjas Training',
-      description: 'Get in touch with CodeNinjas Training. Find our address, contact number, email, and social media links, or fill out our form for course inquiries and support.'
+      description: 'Get in touch with CodeNinjas Training. Find our address, contact number, email, and social media links, or fill out our form for course inquiries and support.',
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_ANON_KEY
     };
     // The 'contact' string refers to 'contact.ejs' in the views folder
     res.render('contact', data);

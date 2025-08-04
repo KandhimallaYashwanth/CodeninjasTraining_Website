@@ -1,11 +1,22 @@
 <%- include('partials/header') %>
+
 <link rel="stylesheet" href="/css/enroll.css">
 
 <main>
+    <!-- ============================================ -->
+    <!-- POP-UP MESSAGE CONTAINER (NEW) -->
+    <!-- ============================================ -->
+    <div id="popup-message" class="popup">
+        <div class="popup-content">
+            <span id="popup-text"></span>
+            <button id="popup-close" class="popup-close-btn">&times;</button>
+        </div>
+    </div>
+
     <section id="enroll-form-section" class="enroll-container">
         <div class="form-wrapper">
             <nav class="breadcrumb">
-                <a href="/courses/<%= category %>/<%= course%>"><i data-feather="chevron-left"></i> Back to Course Details</a>
+                <a href="/courses/<%= category %>/<%= course %>"><i data-feather="chevron-left"></i> Back to Course Details</a>
             </nav>
             <div class="form-header">
                 <div class="form-icon-wrapper">
@@ -15,7 +26,7 @@
                 <p class="page-subtitle">Take the next step in your learning journey with CodeNinjas Training.</p>
             </div>
 
-            <form class="enroll-form">
+            <form class="enroll-form" id="enrollment-form">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName">First Name</label>
@@ -61,3 +72,9 @@
 </main>
 
 <%- include('partials/footer') %>
+<script>
+    feather.replace();
+    const SUPABASE_URL = '<%= supabaseUrl %>';
+    const SUPABASE_ANON_KEY = '<%= supabaseKey %>';
+</script>
+<script src="/js/enroll.js"></script>

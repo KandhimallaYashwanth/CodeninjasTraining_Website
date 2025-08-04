@@ -146,3 +146,75 @@
     font-size: 0.85rem;
     color: var(--text-muted);
 }
+
+/* ============================================ */
+/* POP-UP NOTIFICATION STYLES (NEW) */
+/* ============================================ */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(120%);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    font-family: var(--font-family);
+}
+
+.popup.show {
+    transform: translateX(0);
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.popup-text {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.popup-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    padding-left: 1rem;
+    transition: opacity 0.3s ease;
+}
+.popup-close-btn:hover {
+    opacity: 1;
+}
+
+/* Success State */
+.popup.success {
+    background-color: var(--accent-secondary);
+    color: white;
+}
+.popup.success .popup-close-btn {
+    color: white;
+}
+
+/* Error State */
+.popup.error {
+    background-color: #E74C3C; /* A strong red for errors */
+    color: white;
+}
+.popup.error .popup-close-btn {
+    color: white;
+}
+
+/* Info State (Blue) */
+.popup.info {
+    background-color: #3498DB; /* A neutral, professional blue */
+    color: white;
+}
+.popup.info .popup-close-btn {
+    color: white;
+}
