@@ -20,7 +20,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent; /* Corrected from text-emphasis-color */
+    text-emphasis-color: transparent; /* Corrected from text-emphasis-color */
 }
 
 .page-subtitle {
