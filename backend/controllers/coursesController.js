@@ -4,7 +4,6 @@ export const getCoursesPage = (req, res) => {
       title: 'Our Courses - CodeNinjas Training',
       description: 'Explore our wide range of tech and management courses, designed by industry experts to equip you with the skills for tomorrow\'s challenges.'
     };
-    // This renders the 'courses.ejs' file
     res.render('courses', data);
   } catch (error) {
     console.error('Error rendering courses page:', error);
@@ -18,7 +17,6 @@ export const getDataSciencePage = (req, res) => {
       title: 'Data Science Using Python Course - CodeNinjas Training',
       description: 'Unlock your potential with our expert-led data science using python program. This comprehensive course covers Python, Pandas, Matplotlib, and Scikit-learn.'
     };
-    // This renders the new ejs file
     res.render('tech_courses/data-science', data);
   } catch (error) {
     console.error('Error rendering data science page:', error);
@@ -32,7 +30,6 @@ export const getPythonPage = (req, res) => {
       title: 'Python Programming Course - CodeNinjas Training',
       description: 'Start your coding journey with our Python Programming course. Learn Python from scratch, understand its fundamental concepts, and build practical applications.'
     };
-    // This renders the new ejs file
     res.render('tech_courses/python-programming', data);
   } catch (error) {
     console.error('Error rendering python programming page:', error);
@@ -46,7 +43,6 @@ export const getAIPage = (req, res) => {
       title: 'Artificial Intelligence Course - CodeNinjas Training',
       description: 'Explore the fascinating world of Artificial Intelligence. This advanced course covers machine learning, deep learning, natural language processing, and computer vision. Includes hands-on projects using TensorFlow and Keras.'
     };
-    // This renders the new ejs file
     res.render('tech_courses/ai-course', data);
   } catch (error) {
     console.error('Error rendering artificial intelligence page:', error);
@@ -60,7 +56,6 @@ export const getWebDevPage = (req, res) => {
       title: 'Web Development Course - CodeNinjas Training',
       description: 'Become a full-stack web developer with our comprehensive MERN stack course. Learn to build dynamic, data-driven web applications using MongoDB, Express, React, and Node.js.'
     };
-    // This renders the new ejs file
     res.render('tech_courses/web-dev-course', data);
   } catch (error) {
     console.error('Error rendering web development page:', error);

@@ -14,7 +14,6 @@ export const getHomePage = (req, res) => {
 
 export const getAboutPage = (req, res) => {
   try {
-    console.log('About page route accessed');
     const data = {
       title: 'About Us - CodeNinjas Training'
     };
@@ -28,7 +27,6 @@ export const getAboutPage = (req, res) => {
 
 export const getContactPage = (req, res) => {
   try {
-    console.log('Contact page route accessed');
     const data = {
       title: 'Contact Us - CodeNinjas Training'
     };
@@ -36,20 +34,6 @@ export const getContactPage = (req, res) => {
     res.render('contact', data);
   } catch (error) {
     console.error('Error rendering contact page:', error);
-    res.status(500).send('Error loading the page.');
-  }
-};
-
-export const getServicePage = (req, res) => {
-  try {
-    console.log('Service page route accessed');
-    const data = {
-      title: 'Service - CodeNinjas Training'
-    };
-    // The 'about' string refers to 'about.ejs' in the views folder
-    res.render('Service', data);
-  } catch (error) {
-    console.error('Error rendering Service page:', error);
     res.status(500).send('Error loading the page.');
   }
 };
