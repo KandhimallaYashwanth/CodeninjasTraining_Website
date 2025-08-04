@@ -12,27 +12,24 @@
 
 
 .breadcrumb {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 2;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
 }
 
-.breadcrumb a, .breadcrumb span {
+.breadcrumb a {
     color: var(--text-muted);
     text-decoration: none;
-    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
     color: var(--text-dark);
-}
-
-.breadcrumb i {
-    width: 16px;
-    height: 16px;
 }
 
 .course-page-title {

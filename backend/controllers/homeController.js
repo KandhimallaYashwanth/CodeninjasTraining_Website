@@ -15,7 +15,8 @@ export const getHomePage = (req, res) => {
 export const getAboutPage = (req, res) => {
   try {
     const data = {
-      title: 'About Us - CodeNinjas Training'
+      title: 'About Us - CodeNinjas Training',
+      description: 'Learn more about CodeNinjas Training, our mission to bridge the gap between academia and industry, and our commitment to student success.'
     };
     // The 'about' string refers to 'about.ejs' in the views folder
     res.render('about', data);
@@ -28,7 +29,8 @@ export const getAboutPage = (req, res) => {
 export const getContactPage = (req, res) => {
   try {
     const data = {
-      title: 'Contact Us - CodeNinjas Training'
+      title: 'Contact Us - CodeNinjas Training',
+      description: 'Get in touch with CodeNinjas Training. Find our address, contact number, email, and social media links, or fill out our form for course inquiries and support.'
     };
     // The 'contact' string refers to 'contact.ejs' in the views folder
     res.render('contact', data);

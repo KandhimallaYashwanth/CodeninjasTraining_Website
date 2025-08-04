@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import homeRoutes from './routes/homeRoutes.js';
 import coursesRoutes from './routes/coursesRoutes.js';
 import servicesRoutes from './routes/servicesRoutes.js';
+import enrollRoutes from './routes/enrollRoutes.js';
 // --- Basic Setup ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, "../frontend/public")));
 app.use('/', homeRoutes);
 app.use('/',coursesRoutes);
 app.use('/',servicesRoutes);
+app.use('/',enrollRoutes);
 
 app.listen(port, () => {
   console.log(`🚀 Server is running at http://localhost:${port}`);

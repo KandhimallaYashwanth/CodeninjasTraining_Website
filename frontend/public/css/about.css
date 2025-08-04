@@ -79,7 +79,13 @@ main {
     line-height: 1.8;
     color: var(--text-muted);
 }
-
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
 /* ============================================ */
 /* JOURNEY SECTION */
 /* ============================================ */
