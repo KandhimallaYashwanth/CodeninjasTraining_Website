@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CodeNinjas Training - Services</title>
-  <link rel="stylesheet" href="/css/Service.css">
-</head>
-<body>
-<header>
-    <div class="logo">Code<span>ninjas</span> <span class="green" style = "font-size: large;"><sup>Training</sup></span></div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Courses</a>
-      <a href="#">Contact Us</a>
-      <a href="#" class="btn">Explore Courses</a>
-    </nav>
-</header>
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/Service.css">
 
-  <section class="services-header">
-    <h2>Our <span>Services</span></h2>
-    <p>At CodeNinjas Training, we offer a comprehensive suite of IT services designed to empower your business, from custom software solutions to strategic IT consulting.</p>
-  </section>
+    <section id="courses-hero">
+        <div class="container text-center animate-on-scroll">
+            <h1 class="page-title">Our <span class="gradient-text">Services</span></h1>
+            <p class="page-subtitle">At CodeNinjas Training, we offer a comprehensive suite of IT services designed to empower your business, from custom software solutions to strategic IT consulting.</p>
+        </div>
+    </section>
 
   <section class="cards-container">
     <div class="card">
@@ -74,35 +58,6 @@
       <button class="learn-btn">Learn More →</button>
     </div>
   </section>
-
-  <footer>
-    <div>
-      <div class="logo">Code<span>ninjas</span> <span class="green" style = "font-size: large;"><sup>Training</sup></span></div>
-      <p>Empowering careers through comprehensive IT training and skill development. Join thousands of successful graduates.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Courses</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <div>
-      <h4>Popular Courses</h4>
-      <a href="#">Data Science Using Python</a>
-      <a href="#">Web Development</a>
-      <a href="#">Artificial Intelligence</a>
-      <a href="#">Stock Market</a>
-    </div>
-    <div>
-      <h4>Contact Info</h4>
-      <p>📍 17, 2nd Floor, 7th Main Road, II Stage, Indiranagar, Bangalore-560038, Karnataka, India</p>
-      <p>📞 +91 8019626242</p>
-      <p>✉️ info@codeninjastraining.in</p><br>
-      <button class="cta-btn">Contact Us</button>
-    </div>
-  </footer>
   <script>
   document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
@@ -122,7 +77,4 @@
     cards.forEach(card => observer.observe(card));
   });
 </script>
-
-
-</body>
-</html>
+<%- include('partials/footer') %>

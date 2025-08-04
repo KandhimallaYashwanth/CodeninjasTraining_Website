@@ -1,102 +1,49 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+/* ============================================ */
+/* COURSES PAGE STYLES (BLUE & GREEN THEME) */
+/* ============================================ */
+#courses-hero {
+    background-color: var(--bg-accent);
+    padding: 4rem 0;
+    text-align: center;
 }
 
-body {
-  background: #c9e2c6;
-  color: #222;
-  line-height: 1.6;
+.page-title {
+    font-size: 3.8rem; /* Increased font size */
+    margin-bottom: 1.5rem; /* Increased margin */
+    font-weight: 800; /* Bolder font */
+    letter-spacing: -1px; /* Tighter letter spacing for professional look */
 }
 
-header {
-  background: #ffffff8f;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee;
-  flex-wrap: wrap;
-  position : fixed;
-  width : 100%;
+/* This ensures the gradient is applied correctly to the span */
+.page-title .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; /* Corrected from text-emphasis-color */
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.logo span {
-  color: #9cb7ae;
-}
-
-.logo .green {
-  color: #036a3e;
-  font-size: 0.8rem;
-  margin-left: 2px;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.btn {
-  background:#036a3e;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #024e2d;
-}
-a:hover{
-    color : #024e2d;
-}
-
-.services-header {
-  text-align: center;
-  padding: 60px 20px 20px;
-}
-
-.services-header h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.services-header span {
-  color:#036a3e;
-}
-
-.services-header p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: auto;
-  color: #555;
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 650px; /* Slightly wider for better flow */
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 cards per row */
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 30px;
   padding: 40px 60px;
   margin : 100px;
 }
 
 .card {
-  background: #ffffffb5;
+  background: var(--bg-card);
   padding: 24px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-soft);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -110,13 +57,14 @@ a:hover{
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
 }
 
 .icon {
-  background: linear-gradient(135deg, #036a3e,#9cb7ae);
+  background: var(--gradient-primary);
   width: 40px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,16 +77,17 @@ a:hover{
   font-size: 1.1rem;
   margin-bottom: 8px;
   font-weight: 600;
+  color: var(--text-dark);
 }
 
 .card p {
-  color: #666;
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin-bottom: 16px;
 }
 
 .learn-btn {
-  background:  #036a3e;
+  background: var(--accent-primary);
   color: white;
   border: none;
   padding: 10px 16px;
@@ -149,12 +98,12 @@ a:hover{
 }
 
 .learn-btn:hover {
-  background:  #024e2d;
+  background: #004A50; /* Darker shade of accent-primary */
 }
 
 /* CTA Section */
 .cta-section {
-  background:  #036a3e;
+  background: var(--accent-primary);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -169,22 +118,24 @@ a:hover{
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto 30px;
+  opacity: 0.9;
 }
 
 .cta-btn {
   background: white;
-  color:  #036a3e;
+  color: var(--accent-primary);
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .cta-btn:hover {
-  background: #f0f0f0;
+  background: var(--bg-accent);
+  color: var(--text-dark);
 }
 
 /* Responsive layout */
@@ -199,42 +150,3 @@ a:hover{
     grid-template-columns: 1fr;
   }
 }
-
- footer {
-      background-color: #0c0f1cfb;
-      color: #fff;
-      padding: 3rem 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      border-top: 1px solid #222;
-    }
-
-    footer div {
-      flex: 1 1 200px;
-      margin-bottom: 1.5rem;
-    }
-
-    footer h4 {
-      margin-bottom: 1rem;
-    }
-
-    footer a {
-      color: #aaa;
-      text-decoration: none;
-      display: block;
-      margin: 0.2rem 0;
-    }
-
-    footer .logo {
-      font-size: 1.2rem;
-    }
-
-    footer .green {
-      color: #9cb7ae;
-    }
-
-    footer p {
-      color: #ccc;
-      font-size: 0.9rem;
-    }

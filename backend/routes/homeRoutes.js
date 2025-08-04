@@ -8,5 +8,5 @@ router.get('/', getHomePage);
 router.get('/about', getAboutPage);
 console.log('Routes configured');
 router.get('/contact', getContactPage);
-router.get('/service', getServicePage);
+router.get('/services', getServicePage);
 export default router;

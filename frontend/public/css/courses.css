@@ -14,7 +14,6 @@
     margin-bottom: 1.5rem; /* Increased margin */
     font-weight: 800; /* Bolder font */
     letter-spacing: -1px; /* Tighter letter spacing for professional look */
-    color: var(--text-dark); /* Sets color for non-gradient part */
 }
 
 /* This ensures the gradient is applied correctly to the span */
