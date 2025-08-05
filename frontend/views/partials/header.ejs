@@ -6,6 +6,21 @@
     <title><%= title %></title>
     <meta name="description" content="<%= description %>">
 
+    <!-- OpenGraph -->
+    <meta property="og:title" content="CodeNinjas Training LLP - Expert IT & Management Courses" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.your-live-domain.com/" />
+    <meta property="og:image" content="https://www.your-live-domain.com/images/social-preview.jpg" />
+    <meta property="og:description" content="Transform your career with hands-on training in Python, Data Science, Web Development, and more. Get job-ready skills and placement assistance." />
+    <meta property="og:site_name" content="CodeNinjas Training LLP" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CodeNinjas Training LLP - Expert IT & Management Courses" />
+    <meta name="twitter:description" content="Transform your career with hands-on training in Python, Data Science, Web Development, and more." />
+    <meta name="twitter:image" content="https://www.your-live-domain.com/images/social-preview.jpg" />
+
       <!-- Supabase Client Library -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
@@ -23,6 +38,41 @@
     <!-- Global Stylesheets -->
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "CodeNinjas Training LLP",
+        "url": "https://www.your-live-domain.com/",
+        "logo": "https://www.your-live-domain.com/images/logo.png",
+        "description": "Premier IT and management training institute offering expert-led courses in Python, Data Science, Web Development, and Finance with dedicated placement assistance.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17, 2ND FLOOR, 7TH MAIN ROAD, II STAGE, INDIRANAGAR",
+            "addressLocality": "Bengaluru",
+            "addressRegion": "KA",
+            "postalCode": "560038",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+918019626242",
+            "contactType": "Customer Service"
+        }
+        }
+</script>
+
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BVYSYSJ35N"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BVYSYSJ35N');
+    </script>
+
 </head>
 <body>
 

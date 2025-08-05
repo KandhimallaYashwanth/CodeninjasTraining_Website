@@ -66,7 +66,7 @@ export const getWebDevPage = (req, res) => {
 export const getJavaPage = (req, res) => {
   try {
     const data = {
-      title: 'Core Java Programming Course - CodeNinjas Training',
+      title: 'Java Programming Course - CodeNinjas Training',
       description: 'Master the fundamentals of Java, one of the most popular and in-demand programming languages for enterprise applications and Android development.'
     };
     res.render('tech_courses/java-course', data);
