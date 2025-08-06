@@ -254,6 +254,45 @@ main {
     text-decoration: none;
 }
 
+/* Overview Section - TEXT WRAP LAYOUT */
+.overview-content {
+    margin-bottom: 3rem;
+}
+
+.overview-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.overview-visual {
+    float: right;
+    max-width: 400px;
+    height: 300px;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+.overview-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-title {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Key Features & Benefits - Learning Outcomes Style */
 .learning-outcomes-grid {
     display: grid;
@@ -347,6 +386,27 @@ main {
     .csd-cta-btn {
         padding: 0.625rem 1.25rem;
         font-size: 0.9rem;
+    }
+
+    .overview-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .overview-visual {
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+    }
+    .overview-visual img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border-radius: 16px;
     }
 }
 
