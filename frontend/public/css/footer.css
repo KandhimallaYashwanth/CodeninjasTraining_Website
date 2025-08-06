@@ -29,7 +29,13 @@
 #main-footer .logo svg path { stroke: #FFFFFF; }
 #main-footer .logo svg path:nth-child(2) { stroke: var(--accent-saffron); }
 .footer-motto { line-height: 1.8; margin-bottom: 1.5rem; }
-.social-links { display: flex; gap: 1rem; }
+.social-links { 
+    display: flex;
+     gap: 1rem;
+     }
+.wa-icon{
+    font-size: 35px;
+}
 .social-links a {
     color: rgba(255, 255, 255, 0.7);
     transition: color 0.3s ease, transform 0.3s ease;
