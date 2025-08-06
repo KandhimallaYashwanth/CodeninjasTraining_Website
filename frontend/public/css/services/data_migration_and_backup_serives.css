@@ -1,0 +1,486 @@
+
+/* Import existing variables and base styles */
+:root {
+    --bg-main: #F8F9FA;
+    --bg-card: #FFFFFF;
+    --bg-accent: #F0F7F7;
+    --text-dark: #1C2B33;
+    --text-muted: #4A5C66;
+    --accent-primary: #006D77;
+    --accent-secondary: #2A9D8F;
+    --gradient-primary: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    --border-color: #DEE2E6;
+    --shadow-soft: 0 4px 15px rgba(0, 109, 119, 0.06);
+    --shadow-medium: 0 8px 30px rgba(0, 109, 119, 0.1);
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure body and main have proper spacing */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-main);
+}
+
+main {
+    padding-top: 80px; /* Account for fixed header */
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container styles */
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.csd-hero {
+    background-color: var(--bg-accent);
+    padding: 6rem 0;
+    text-align: center;
+    margin-bottom: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+.csd-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.breadcrumb a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-secondary);
+}
+
+.breadcrumb i {
+    width: 16px;
+    height: 16px;
+}
+
+/* Hero Typography */
+.csd-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.csd-title .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.csd-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Main Content Section - FULL WIDTH BACKGROUND */
+.csd-main-content {
+    background-color: var(--bg-card);
+    padding: 6rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+/* Content Wrapper - PLAIN DIV */
+.csd-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+}
+
+/* Content Typography */
+.csd-content-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.csd-content-wrapper h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 2.5rem 0 1.5rem 0;
+    line-height: 1.4;
+}
+
+.csd-content-wrapper p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Lists */
+.csd-content-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.csd-content-wrapper ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.csd-content-wrapper ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-primary);
+    border-radius: 50%;
+}
+
+/* Why Choose Us Section */
+.csd-why-choose-us {
+    background-color: var(--bg-accent);
+    padding: 6rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+.csd-why-choose-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.csd-why-choose-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.csd-why-choose-content p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+
+/* CTA within Why Choose Us */
+.csd-cta {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.csd-cta-btn {
+    display: inline-block;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-soft);
+}
+
+.csd-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+    color: white;
+    text-decoration: none;
+}
+
+/* Overview Section - TEXT WRAP LAYOUT */
+.overview-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2.5rem;
+}
+.overview-content p {
+    flex: 1 1 0;
+    margin: 0;
+}
+.overview-visual {
+    flex: 0 0 400px;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-title {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Key Features & Benefits - Learning Outcomes Style */
+.learning-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1.5rem;
+}
+
+.learning-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learning-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-soft);
+}
+
+.learning-item i {
+    color: var(--accent-primary);
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .csd-hero {
+        padding: 4rem 0;
+    }
+    
+    .csd-hero-content {
+        padding: 0 1.5rem;
+    }
+    
+    .csd-title {
+        font-size: 2.5rem;
+    }
+    
+    .csd-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .csd-main-content {
+        padding: 4rem 0;
+    }
+    
+    .csd-content-wrapper {
+        padding: 0 1.5rem;
+    }
+    
+    .csd-content-wrapper h2 {
+        font-size: 2rem;
+    }
+    
+    .csd-content-wrapper h3 {
+        font-size: 1.5rem;
+    }
+    
+    .csd-content-wrapper p {
+        font-size: 1rem;
+    }
+    
+    .csd-content-wrapper ul li {
+        font-size: 1rem;
+    }
+    
+    .csd-why-choose-us {
+        padding: 4rem 0;
+    }
+    
+    .csd-why-choose-wrapper {
+        padding: 0 1.5rem;
+    }
+    
+    .csd-why-choose-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .csd-why-choose-content p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .csd-cta-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .overview-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .overview-visual {
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+    }
+    .overview-visual img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .csd-hero {
+        padding: 3rem 0;
+    }
+    
+    .csd-hero-content {
+        padding: 0 1rem;
+    }
+    
+    .csd-title {
+        font-size: 2rem;
+    }
+    
+    .csd-subtitle {
+        font-size: 1rem;
+    }
+    
+    .csd-main-content {
+        padding: 3rem 0;
+    }
+    
+    .csd-content-wrapper {
+        padding: 0 1rem;
+    }
+    
+    .csd-content-wrapper h2 {
+        font-size: 1.75rem;
+    }
+    
+    .csd-content-wrapper h3 {
+        font-size: 1.3rem;
+    }
+    
+    .csd-why-choose-us {
+        padding: 3rem 0;
+    }
+    
+    .csd-why-choose-wrapper {
+        padding: 0 1rem;
+    }
+    
+    .csd-why-choose-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .csd-why-choose-content p {
+        margin-bottom: 1.5rem;
+    }
+    
+    .csd-cta-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .breadcrumb {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .overview-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .overview-visual {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+    }
+    .overview-visual img {
+        max-width: 100%;
+        height: auto;
+    }
+}
