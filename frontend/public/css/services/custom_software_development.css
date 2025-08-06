@@ -254,6 +254,46 @@ main {
     text-decoration: none;
 }
 
+/* Overview Section - TEXT WRAP LAYOUT */
+.overview-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2.5rem;
+}
+.overview-content p {
+    flex: 1 1 0;
+    margin: 0;
+}
+.overview-visual {
+    flex: 0 0 400px;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-title {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Key Features & Benefits - Learning Outcomes Style */
 .learning-outcomes-grid {
     display: grid;
@@ -348,6 +388,27 @@ main {
         padding: 0.625rem 1.25rem;
         font-size: 0.9rem;
     }
+
+    .overview-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .overview-visual {
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+    }
+    .overview-visual img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border-radius: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -406,5 +467,23 @@ main {
     
     .breadcrumb {
         margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .overview-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .overview-visual {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 1.5rem 0;
+    }
+    .overview-visual img {
+        max-width: 100%;
+        height: auto;
     }
 }
