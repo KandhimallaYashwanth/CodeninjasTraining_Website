@@ -254,6 +254,37 @@ main {
     text-decoration: none;
 }
 
+/* Key Features & Benefits - Learning Outcomes Style */
+.learning-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1.5rem;
+}
+
+.learning-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learning-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-soft);
+}
+
+.learning-item i {
+    color: var(--accent-primary);
+    flex-shrink: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .csd-hero {
