@@ -1,4 +1,4 @@
-name: Full Lint & Test Workflow
+name: Full Frontend & Backend Lint & Test
 
 on:
   push:
@@ -17,23 +17,23 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
       - name: Install Global Linters
         run: |
-          npm install -g htmlhint stylelint eslint stylelint-config-standard
+          npm install -g htmlhint stylelint@15 stylelint-config-standard eslint@8
 
       - name: Lint HTML
         run: htmlhint "frontend/**/*.html"
 
       - name: Lint CSS
-        run: stylelint "frontend/**/*.css" || echo "CSS linting done"
+        run: stylelint "frontend/**/*.css"
 
       - name: Lint JS
-        run: eslint "frontend/**/*.js" || echo "JS linting done"
+        run: eslint "frontend/**/*.js" || echo "Frontend JS lint done"
 
   backend:
     name: Lint & Test Backend
