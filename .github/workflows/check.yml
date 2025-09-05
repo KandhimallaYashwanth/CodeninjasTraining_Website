@@ -52,7 +52,13 @@ jobs:
       - run: |
           cd backend
           if npm run | grep -q "test"; then
-            npm test
+            # check if test script is just the default "no test specified"
+            TEST_SCRIPT=$(node -p "require('./package.json').scripts?.test || ''")
+            if [[ "$TEST_SCRIPT" == *"no test specified"* ]]; then
+              echo "Default test script found, skipping tests"
+            else
+              npm test
+            fi
           else
             echo "No test script found, skipping tests"
           fi
